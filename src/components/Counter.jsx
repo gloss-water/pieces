@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import CountUp from "react-countup";
 
+/**
+ * clicker style 'game' using hooks
+ */
 const Counter = ({ state, update }) => {
     const [interval, setAmount] = useState(500);
     const [previousNumber, updatePreviousNumber] = useState(state);
